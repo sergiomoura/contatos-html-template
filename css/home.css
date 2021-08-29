@@ -129,8 +129,8 @@ main section > a{
 
 #modal form {
     background-color: rgba(0,0,0,0.4);
-    padding: 20px;
-    box-shadow: 0 0 5px inset rgba(256,256,256,0.3);
+    padding: 40px;
+    box-shadow: 0 0 2px inset rgba(256,256,256,0.3);
     width: 400px;
 }
 
@@ -161,6 +161,6 @@ main section > a{
 #modal form .controles{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 0;
 }

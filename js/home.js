@@ -5,7 +5,8 @@ let mostrarModal = () => {
     modal.style.opacity = 1
 }
 
-let esconderModel = () => {
+let esconderModal = (evt) => {
+    evt.bubbles = false;
     modal.style.display = "none"
     modal.style.opacity = 0
 }
@@ -13,8 +14,10 @@ let esconderModel = () => {
 let link = document.getElementById("linkAbrirModal");
 link.addEventListener('click', mostrarModal);
 
-let cancel = document.querySelector("button.link");
-cancel.addEventListener('click', esconderModel)
+let edits = document.querySelectorAll("section > a");
+edits.forEach(
+    e => e.addEventListener('click', mostrarModal)
+)
 
-
+modal.addEventListener('click',esconderModal)
 

@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    width: 400px;
+    padding: 50px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+input[type=text],
+input[type=email],
+input[type=password]{
+    width: 100%;
+}
+
+.controles{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}

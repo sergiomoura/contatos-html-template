@@ -1,15 +1,9 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 form {
     width: 700px;
     background-color: rgba(0,0,0,0.4);
     display: flex;
     padding: 30px 0;
+    margin: 100px auto;
 }
 
 form > div {

@@ -91,11 +91,16 @@ main section h3{
     font-size: 1.2rem;
 }
 
-main section h4{
-    margin: 0;
-    padding: 0;
+main div {
+    margin-top: 5px;
+}
+
+main div a{
+    text-decoration: none;
+    color: rgb(60, 0, 200);
     font-size: 0.8rem;
-    font-weight: normal;
+    display: block;
+    font-style: italic;
 }
 
 main section ul {

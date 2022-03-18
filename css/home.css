@@ -133,6 +133,7 @@ main section > a{
     position: absolute;
     bottom: 20px;
     right: 20px;
+    border-radius: 2px;
 }
 
 #modal {

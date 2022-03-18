@@ -23,6 +23,7 @@ nav > ul > li {
     display: inline-block;
     margin:0px;
     padding:0px;
+    position: relative;
 }
 
 nav > ul > li > a {
@@ -39,6 +40,30 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover{
     background-color: rgba(256,256,256,0.3);
+}
+
+nav > ul > li:nth-child(3){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+nav > ul > li:nth-child(3) > input{
+    background-color: rgba(255,255,255,0.1);
+    width: 50%;
+    transition: background-color 500ms ease;
+}
+
+nav > ul > li:nth-child(3) > button{
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 5px;
+    background-image: url(../img/search_white_24dp.svg);
+    background-color: transparent;
+    padding: 0;
 }
 
 nav > ul > li:last-child{

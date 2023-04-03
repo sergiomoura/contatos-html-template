@@ -83,7 +83,8 @@ main section {
     background-color: rgba(0,0,0,0.4);
     padding: 20px;
     position: relative;
-    transition: background-color 0.1s linear ;
+    transition: background-color 0.1s linear;
+    backdrop-filter: blur(6px);
 }
 
 main section:hover {

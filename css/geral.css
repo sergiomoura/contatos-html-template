@@ -1,4 +1,13 @@
-*{
+:root {
+    --background-color: #212121;
+    --background-transparent:  #000000e6;
+    --light-transparent: #ffffffcc;
+    --primary: #3c00c8;
+    --light-primary: #5000fa;
+    --default-font-color: #cccccc;
+}
+
+* {
     box-sizing: border-box;
     font-family: 'Open Sans',  Arial, sans-serif;
 }
@@ -11,8 +20,8 @@ html {
 body {
     padding: 0;
     margin:0;
-    background-color: #212121;
-    color: #CCC;
+    background-color: var(--background-color);
+    color: var(--default-font-color);
     height: 100%;
     background-image: url(../img/bg.jpg);
     background-size:cover;
@@ -25,14 +34,14 @@ body::before {
     content: "";
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0; 
-    background: rgba(0,0,0,0.9);
+    background: var(--background-transparent);
     pointer-events: none;
     position: fixed;
     left: 0;
     top: 0;
 }
 
-form label{
+form label {
     font-size: 0.8rem;
     display: block;
     margin: 0 0 10px 0;
@@ -42,55 +51,56 @@ input[type=text],
 input[type=tel],
 input[type=email],
 input[type=search],
-input[type=password]{
+input[type=password] {
     padding: 5px;
     font-size: 1rem;
-    border: 2px solid rgba(0,0,0,0);
-    background-color: rgba(256,256,256,0.8);
+    background-color: var(--light-transparent);
+    border-color: transparent;
+    border-width: 2px;
+    border-style: solid;
 }
 
 input[type=text]:focus,
+input[type=tel]:focus,
 input[type=email]:focus,
 input[type=search]:focus,
-input[type=password]:focus{
+input[type=password]:focus {
     outline: none;
-    border: 2px solid rgb(60, 0, 200);
-    background-color: rgba(256,256,256,1);
+    border-color:  var(--primary);
 }
 
 button {
     border: none;
     cursor: pointer;
     padding: 10px 20px;
-    background-color: rgb(60, 0, 200);
-    color: #CCC;
+    background-color: var(--primary);
+    color: var(--default-font-color);
     font-size: 0.9rem;
     border-radius: 2px;
 }
 
 button:hover {
-    background-color: rgb(80, 0, 250);
-    color: #fff;
+    background-color: var(--light-primary);
 }
 
-button.link{
+button.link {
     background-color: transparent;
-    color: rgb(80,0,250);
+    color: var(--light-primary);
     text-decoration: underline;
 }
 
-button.link:hover{
+button.link:hover {
     color: #CCC;
 }
 
 a {
     background-color: transparent;
-    color: rgb(80,0,250);
+    color: var(--light-primary);
     text-decoration: underline;
     display: inline-block;
 }
 
-a:hover{
+a:hover {
     color: #CCC;
 }
 

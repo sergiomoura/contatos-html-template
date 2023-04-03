@@ -5,10 +5,25 @@ let mostrarModal = () => {
     modal.style.opacity = 1
 }
 
-let esconderModal = (evt) => {
-    evt.bubbles = false;
+let esconderModal = () => {
     modal.style.display = "none"
     modal.style.opacity = 0
+}
+
+let onLinkAbrirModalClick = evt =>{
+    mostrarModal();
+}
+
+let onButtonEditarClick = evt => {
+    mostrarModal();
+}
+
+let onCancelarClick = evt => {
+    esconderModal();
+}
+
+onAdicionarClick = evt => {
+    esconderModal();
 }
 
 let link = document.getElementById("linkAbrirModal");
@@ -19,5 +34,10 @@ edits.forEach(
     e => e.addEventListener('click', mostrarModal)
 )
 
-modal.addEventListener('click',esconderModal)
+let btAdicionarClick = document.getElementById("btAdicionar");
+btAdicionarClick.addEventListener('click', esconderModal);
+
+let btCancelarClick = document.getElementById('btCancelar')
+btCancelarClick.addEventListener('click', esconderModal);
+
 
